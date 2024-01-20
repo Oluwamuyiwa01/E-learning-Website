@@ -1,0 +1,64 @@
+body{
+    box-sizing: border-box;
+    margin: 0%;
+    padding:0%;
+    background: url(../IMG/60c61073ebd7c1a446fe0568_christina-wocintechchat-com-NDoVgcS_lZM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display:flex;
+    align-items:center;
+}
+
+.container{
+    margin:20px 30px 30px 20px;
+    width: 100%;
+    border:2px solid black;
+    max-width:350px;
+    padding:17px;
+    text-align: center;
+}
+
+.form-title{
+    font-size: x-large;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.user-input-box{
+    margin: 15px;
+}
+
+.user-input-box input{
+    padding: 10px 0px 10px 0px;
+    border:none;
+    outline:none;
+    width:100%;
+    max-width:300px;
+}
+
+.form-submit-btn input{
+    border:none;
+    padding:7px;
+    margin: 10px;
+    width:86%;
+    border-radius:5px;
+    font-size: large;
+    background-color:tomato;
+}
+
+.form-submit-btn input:hover{
+    background-color: rgba(255, 99, 71, 0.7);
+}
+
+
+.bottom a{
+    text-decoration: none;
+    color:blue;
+}
+
+@media screen and (max-width:371px) {
+    .container{
+        padding:0px;
+    }
+}

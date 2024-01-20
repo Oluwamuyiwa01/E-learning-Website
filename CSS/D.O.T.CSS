@@ -1,0 +1,225 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* =========BODY============= */
+
+body{
+    background: url(../IMG/60c61073ebd7c1a446fe0568_christina-wocintechchat-com-NDoVgcS_lZM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: top;
+    height: 100vh;
+}
+
+/* =======HEADER======== */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: brown; */
+    margin-top: 30px;
+    width: 100%;
+    position:fixed;
+}
+
+/* ========LOGO=========== */
+
+p.logo{
+    padding: 5px;
+    margin-left:50px;
+    font-size: xx-large;
+    font-weight:bold;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+p.logo a{
+    color: black;
+    letter-spacing:-5px;
+}
+
+/* ==========NAVIGATION=========== */
+
+ul{
+    display: flex;
+    align-self: center;
+    font-size:17px;
+}
+
+ul li{
+    /* margin-right:30px; */
+    margin-left: 30px;
+
+
+}
+
+ul li a{
+    color: white;
+    padding:12px 15px 12px 15px;
+    /* padding:15px; */
+    /* background-color: blue; */
+}
+
+ul li a:hover{
+    background-color:tomato ;
+    transition: all 0.5s;
+}
+
+/* ========LOGIN======== */
+P.login{
+    border: 2px solid black;
+    align-self: center;
+    margin-right:40px;
+    padding:10px 15px;
+}
+
+p.login a{
+    color: white;
+}
+
+p.login:hover{
+    background-color: tomato;
+    transition: all 0.5s;
+}
+/* ============HAMBURGER================ */
+.hamburger{
+    display:none;
+    align-self: center;
+    height: fit-content;
+    cursor: pointer;
+    /* margin: 15px 20px 0px 0px; */
+    padding: 3px 9px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.hamburger div{
+    width: 30px;
+    height: 2px;
+    margin: 6px 0px;
+    background-color: white;
+}
+
+/* ======FLEX=========*/
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    /* align-content:center; */
+    align-items:flex-start;
+    margin-left:50px;
+    height:100vh;
+    margin-right: 5px;
+}
+
+.flex > div{
+    color: white;
+    /* text-align: center; */
+}
+
+.flex .text{
+    line-height: 40px;
+    font-size:xx-large;
+    margin-bottom: 10px;
+}
+.text2 p{
+    font-size: 17px;
+}
+.login2{
+    margin-top:10px;
+    border: 2px solid black;
+    margin-right:40px;
+    padding:7px 15px;
+
+}
+.login2:hover{
+    background-color: tomato;
+    transition: all 0.5s;
+}
+
+
+/* =======GET STARTED========= */
+
+.get-started{
+    background-color:tomato;
+    margin-top:10px;
+    border-radius: 5px;
+    /* border: 2px solid black; */
+    margin-right:40px;
+    padding:7px 15px;
+}
+
+.get-started a{
+    color: white;
+}
+
+.get-started:hover{
+    
+    background-color: rgba(255, 99, 71, 0.7);
+    
+}
+
+/* =======MEDIA QUARY=========== */
+@media screen and (max-width:891px) {
+    p.login{
+        display: none;
+    }
+
+    ul{
+        margin-right: 20px;
+    }
+    ul li a{
+        padding:12px 10px 12px 10px;
+    
+}
+
+}
+
+@media screen and (max-width:675px) {
+
+    header{
+        margin-top:0px;
+        background-color: brown;
+    }
+    .hamburger{
+        display: block;
+    }
+    #nav-checkbox:checked ~ ul{
+        left:0%;
+    }
+    
+    ul{
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        background-color:rgba(165, 42, 42 , 0.9);
+        top:47px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    ul li{
+        line-height:30px;
+        margin: 15px 0px;
+
+    }
+}
+
+@media screen and (max-width:455px) {
+    p.logo , .flex{
+        margin-left:15px;
+    }
+    
+}
+
+@media screen and (max-width:370px){
+   .flex .text{
+        font-size: x-large;
+    }
+}
